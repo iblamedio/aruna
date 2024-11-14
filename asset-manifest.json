@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/aruna/static/css/main.8a30c639.css",
+    "main.css": "/aruna/static/css/main.c1787a34.css",
     "main.js": "/aruna/static/js/main.291b5c5a.js",
     "static/js/453.24441029.chunk.js": "/aruna/static/js/453.24441029.chunk.js",
     "static/media/image 1.jpg": "/aruna/static/media/image 1.5c190fc1581de3a5649e.jpg",
@@ -33,12 +33,12 @@
     "static/media/economia.svg": "/aruna/static/media/economia.9241718c4f7b34aac09950673f91b045.svg",
     "index.html": "/aruna/index.html",
     "static/media/si_sun-set-line.svg": "/aruna/static/media/si_sun-set-line.1d95294e29d156d0da8e38c09390c543.svg",
-    "main.8a30c639.css.map": "/aruna/static/css/main.8a30c639.css.map",
+    "main.c1787a34.css.map": "/aruna/static/css/main.c1787a34.css.map",
     "main.291b5c5a.js.map": "/aruna/static/js/main.291b5c5a.js.map",
     "453.24441029.chunk.js.map": "/aruna/static/js/453.24441029.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a30c639.css",
+    "static/css/main.c1787a34.css",
     "static/js/main.291b5c5a.js"
   ]
 }
