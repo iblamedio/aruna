@@ -1,0 +1,98 @@
+.footer {
+    background-color: #12070D;
+    width:100vw;
+}
+
+.footer-content {
+    width:1280px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    padding:120px 0;
+}
+
+.footer-content img.company-logo {
+    height:180px;
+    width:180px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.footer-content img.company-logo:hover {
+    transition:.2s;
+    transform:scale(1.1);
+}
+
+.socialmedia span, .menu span {
+    color:#F5EDF0;
+    font-family:'Montserrat';
+    font-weight: 600;
+    font-size:20px;
+}
+
+.socialmedia .icons {
+    width:170px;
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+}
+
+.socialmedia .icon {
+    background-color:#F5EDF0;
+    width:fit-content;
+    padding:8px;
+    border-radius:15em;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.socialmedia .icon:hover {
+    transition:.2s;
+    background-color:#F7B142;
+}
+
+.socialmedia .icon img {
+    width:24px;
+    height:24px;
+}
+
+div.right {
+    height:fit-content;
+    display:flex;
+}
+
+div.menu {
+    width:280px;
+}
+
+.socialmedia button {
+    width:220px;
+    margin-top:15px;
+    font-size:14px;
+}
+
+.socialmedia button img {
+    height:14px;
+    width:14px;
+    margin-right:5px;
+}
+
+div.menu div.items {
+    margin-top:15px;
+    color:#b1b1b1;
+    font-family:'Montserrat';
+    font-weight: 300;
+    font-size:16px;
+}
+
+div.menu div.items div {
+    transition:.2s;
+    cursor:pointer;
+    width:fit-content;
+    padding:1px 0;
+}
+
+div.menu div.items div:hover {
+    transition:.2s;
+    text-decoration:underline;
+}

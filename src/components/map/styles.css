@@ -1,0 +1,17 @@
+.map-container {
+    height:600px;
+    width:100vw;
+}
+
+.map-header {
+    background:#F7B142;
+    width:100vw;
+    padding:15px 0;
+}
+
+.map-header h1 {
+    width:1280px;
+    margin:auto;
+    color:#12070D;
+    text-align:center;
+}

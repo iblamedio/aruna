@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1226.72 1094.61">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #f7b142;
+        stroke-miterlimit: 1;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        stroke: #f9b233;
+      }
+
+      .cls-2 {
+        stroke: #f7b142;
+      }
+
+      .cls-3 {
+        stroke-width: 28px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="Camada_2" data-name="Camada 2">
+    <polygon class="cls-3" points="583.26 365.6 509.57 440.3 509.57 554.76 584.26 616.14 658.96 554.76 658.96 440.3 583.26 365.6"/>
+    <line class="cls-3" x1="658.96" y1="726.07" x2="658.96" y2="554.76"/>
+    <line class="cls-3" x1="509.57" y1="726.07" x2="509.57" y2="554.76"/>
+    <polyline class="cls-2" points="523.57 726.07 523.57 755.79 495.68 726.07"/>
+    <polyline class="cls-1" points="645.02 726.07 645.02 755.79 672.91 726.07"/>
+  </g>
+  <g id="Camada_3" data-name="Camada 3">
+    <polygon class="cls-4" points="318.18 794.65 318.18 185.32 560.51 185.32 582.84 202.78 605.18 185.32 847.51 185.32 847.51 794.65 604.71 794.65 582.84 780.06 560.04 794.65 318.18 794.65"/>
+  </g>
+  <g id="Camada_4" data-name="Camada 4">
+    <line class="cls-4" x1="490.64" y1="321.84" x2="519.68" y2="351.17"/>
+    <line class="cls-4" x1="523.83" y1="286.28" x2="556.13" y2="318.58"/>
+    <line class="cls-4" x1="584.26" y1="302.43" x2="584.26" y2="259.62"/>
+    <line class="cls-4" x1="677.78" y1="321.69" x2="648.74" y2="351.02"/>
+    <line class="cls-4" x1="644.6" y1="286.14" x2="612.3" y2="318.43"/>
+  </g>
+</svg>

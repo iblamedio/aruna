@@ -1,0 +1,54 @@
+.card {
+    width:450px;
+    height:60px;
+
+    background: 
+    linear-gradient(#1b1117 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(to bottom, #12070D, #F7B142) border-box;
+    color: #F5EDF0;
+    padding: 15px 25px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    display:flex;
+    justify-content:start;
+    margin-top:15px;
+}
+
+.card-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:start;
+}
+
+.card-icon {
+    height:70px;
+    width:70px;
+}
+
+.card-text .card-title {
+    font-weight: 500;
+    color: #F5EDF0;
+}
+
+.card-text .card-paragraph {
+    font-weight: 300;
+    color: #B1B1B1;
+}
+
+#alarme {
+    height:58px;
+    width:45px;
+    margin:0 12px;
+}
+
+#economia {
+    height:64px;
+    width:44px;
+    margin:0 12px;
+}

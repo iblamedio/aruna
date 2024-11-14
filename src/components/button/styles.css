@@ -1,0 +1,33 @@
+button.button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-wrap:nowrap;
+    line-height: 39px;
+    text-align: center;
+    width: 413px;
+    height: 60px;
+    color: #13080E;
+    background: #F7B142;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    transition:.2s;
+    margin-top:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  button.button:hover {
+    transition:.2s;
+    background:#ac7112;
+  }
+
+  button.button img {
+    height:28px;
+    width:28px;
+    margin-right:10px;
+  }
