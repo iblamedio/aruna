@@ -67,7 +67,7 @@ body {
   font-weight: 400;
 }
 
-.first-section-content .first-group .second-line img {
+.title-logo {
   width:70px;
   height:70px;
   margin:10px 0;
@@ -78,13 +78,13 @@ body {
   align-items:center;
 }
 
-.first-section-content .first-group .second-line .title {
+.title {
   display:flex;
   flex-direction:column;
   margin-left:15px;
 }
 
-.first-section-content .first-group .second-line .title .line-one {
+.title .line-one {
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 40px;
@@ -93,7 +93,7 @@ body {
 }
 
 
-.first-section-content .first-group .second-line .title .line-two {
+.line-two {
   color: #b1b1b1;
   font-weight:300;
   font-size:24px;
@@ -264,17 +264,30 @@ div.cards {
 
 .saah-headline img {
   margin:auto;
+  height:112px;
+  width:112px;
 }
 
 .saah-headline h1 {
   margin:0;
   text-align:center;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 48px;
   line-height: 59px;
   color: #12070D;
+  width:50%;
+}
+
+.saah-headline span {
+  color: #1b1117;
+  font-weight:300;
+  font-size:24px;
+  letter-spacing: 1.2em;
+  font-family:'Montserrat';
+  text-align:center;
+  width:50%;
+  margin-right:-1.2em;
 }
 
 .saah-headline h1 span {
@@ -288,7 +301,7 @@ div.cards {
 }
 
 .saah-stuff p {
-  width:420px;
+  width:520px;
   margin:0;
   font-family: 'Montserrat';
   font-style: normal;
@@ -302,14 +315,17 @@ div.cards {
   font-weight:600;
 }
 
-.saah-stuff img {
+.saah-stuff .saah-image {
   margin-top:-25px;
   box-shadow: 0px 0px 16.1px 8px rgba(0, 0, 0, 0.377);
   color:#F7B142;
 }
 
-.saah-stuff .saah-paragraphs .second-paragraph {
+.saah-icon {
   margin-top:120px;
+}
+
+.saah-stuff .saah-paragraphs .second-paragraph {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -323,57 +339,14 @@ div.cards {
   width:100%;
   margin-top:60px;
   display:flex;
+  flex-direction:column;
   justify-content:space-between;
 }
 
-.saah-card {
-  height:370px;
-  width:320px;
-  background: 
-    linear-gradient(#1b1117 0 0) padding-box, 
-    linear-gradient(to bottom, #12070D, #F7B142) border-box;
-
-  color: #F5EDF0;
-  border: 1px solid transparent;
-  border-radius: 15px;
+.saah-cards .saah-cards-container {
   display:flex;
-  flex-direction:column;
-  align-items:center;
-  padding-top:30px;
-}
-
-#middle-card {
-  width:430px;
-}
-
-.saah-card div {
-  width:280px;
-  margin-top:15px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color:#F5EDF0;
-}
-
-.saah-card div#middle-p {
-  width:380px;
-}
-
-.saah-card div span {
-  font-weight:600;
-}
-
-.saah-footer {
-  margin-top:30px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 59px;
-  text-align: center;
-  color:#F5EDF0;
+  justify-content:space-between;
+  margin:5px 0;
 }
 
 .plant-section {
@@ -443,4 +416,11 @@ div.plant-card {
   font-size:48px;
 }
 
+.second-section-slogan {
+  background:#F5EDF0;
+  box-shadow: 0px 0px 10px 15px #F5EDF0;
+}
 
+#aruna-name {
+  font-size:36px;
+}

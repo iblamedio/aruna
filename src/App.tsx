@@ -10,21 +10,20 @@ import carouselImages from './assets/Fotos Aruna';
 import slogan from './assets/slogan.svg';
 import cardIcons from './assets/Card Icons';
 import palmTree from './assets/palm-tree-leaf-silhouette-vector-illustration_136875-5325.png';
-import cuboIcon from './assets/Cubo Icons/box.svg';
-import aiPic from './assets/ai.png';
-import whiteCuboIcon from './assets/Cubo Icons/box-white.svg';
-import carroIcon from './assets/Cubo Icons/carro.svg';
-import solarPanelIcon from './assets/Cubo Icons/solarpanel.svg';
 import plantImage from './assets/planta-legend.png';
 import bedPlantIcon from './assets/Plant Icons/tabler_bed.svg';
 import carPlantIcon from './assets/Plant Icons/bx_car.svg';
 import sofaPlantIcon from './assets/Plant Icons/mdi_sofa-outline.svg';
 import sunsetPlantIcon from './assets/Plant Icons/si_sun-set-line.svg';
+import arunaFrenteImage from './assets/aruna-frente.png';
+import predioIcon from './assets/predio-icon.svg';
+import saahIcons from './assets/Saah Icons';
 
 import { Button } from './components/button';
 import { Footer } from './components/footer';
 import { MapComponent } from './components/map';
 import { Card } from './components/card';
+import { SaahCard } from './components/saah-card';
 
 function App() {
 
@@ -44,7 +43,7 @@ function App() {
 
               <span className="local">ITAPEMA · <span>MEIA PRAIA</span></span>
               <div className="second-line">
-                <img src={arunaLogoYellow}/>
+                <img src={arunaLogoYellow} className="title-logo" />
                 <div className="title">
                   <span className="line-one">ARUNA TOWER</span>
                   <span className="line-two">RESIDENCE</span>
@@ -56,11 +55,8 @@ function App() {
     	    <Reveal cascade triggerOnce delay={1000}>
 
             <div className="sub-headline">
-              Quando seu <span>sentimento</span> e sua <span>consciência</span> tomam a forma de um lar.
+              Quando o <span>sentimento</span> e a <span>consciência</span> tomam a referência de um <span>lar.</span>
               <br/><br/>
-              Um empreendimento que segue o <span>alto padrão</span> de qualidade
-              e onde seus idealizadores se inspiram na tecnologia da 
-              <span> inteligência artificial</span> e no planejamento <span>auto-sustentável.</span>
             </div>
 
             <Button/>
@@ -92,7 +88,7 @@ function App() {
 
         <div className="after-carousel">
           <Reveal cascade triggerOnce>
-            <img src={slogan} alt="Living the Nature" />
+            <img className="second-section-slogan" src={slogan} alt="Living the Nature" />
             <div className="paragraphs">
               Existem motivos pelos quais nossa vida se torna mais encantadora. 
               Mas isso só é possível quando consideramos e planejamos o nosso futuro. 
@@ -112,52 +108,60 @@ function App() {
 
         <div className="saah-content">
           <div className="saah-headline">
-            <img src={cuboIcon} alt="CUBO" />
-            <h1>Conheça o sistema <span>CUBO</span></h1>
+            <img src={arunaLogoYellow} alt="Aruna" />
+            <h1>ARUNA TOWER</h1>
+            <span>RESIDENCE</span>
           </div>
           <div className="saah-stuff">
             <div className="saah-paragraphs">
               <p>
-                Você sabe o que acontece quando falta energia elétrica no edifício? <br/><br/>
-                <span>O elevador não funciona, o portão da garagem não abre, falta água, o subsolo inunda...</span>
+                <span id="aruna-name">Aruna</span> — nome inspirado na natureza de
+                origem sânscrita, antiga língua indiana e tem
+                como o seu significado <span>“castanho
+                avermelhado, nascer do dia, o começo,
+                esperança”.</span>
               </p>
 
+              <img className="saah-icon" src={predioIcon} alt="O Empreendimento" />
               <p className="second-paragraph">
-                Muitos problemas, né? Não precisa mais ser assim.
+                O Empreendimento:
               </p>
             </div>
             
-            <img src={aiPic} alt="AI"/>
+            <img className="saah-image" src={arunaFrenteImage} alt="Aruna Tower"/>
           </div>
           <div className="saah-cards">
-            <Reveal cascade triggerOnce>
-              <div className="saah-card">
-                <img src={whiteCuboIcon} alt="CUBO" />
-                <div>
-                  O sistema cubo pode fornecer energia elétrica para as áreas essenciais de um edifício por até um dia.
-                  <br/><br/>
-                  <span>+ de 100 viagens de elevador.</span>
-                </div>
-              </div>
-              <div className="saah-card" id="middle-card">
-                <img src={carroIcon} alt="Carro" />
-                <div id="middle-p">
-                  Ele também absorve a energia proveniente das frenagens do elevador, como em um carro elétrico.
-                  <br/><br/>
-                  <span>+ de 50% de economia com energia elétrica.</span>
-                </div>
-              </div>
-              <div className="saah-card">
-                <img src={solarPanelIcon} alt="Painel Solar" />
-                <div>
-                  E, conectado a painéis solares, armazena a energia gerada por eles.
-                  <br/><br/>
-                  <span>Adeus, conta de energia.</span>
-                </div>
-              </div>
-            </Reveal>
+            <div className="saah-cards-container">
+              <Reveal cascade triggerOnce>
+                <SaahCard icon={saahIcons.sparkIcon} width={310}>
+                  Hall de entrada + áreas comuns <span>finamente decoradas</span>
+                </SaahCard>
+                <SaahCard icon={saahIcons.diamondIcon} width={300}>
+                  <span>Alto padrão</span> de acabamento
+                </SaahCard>
+                <SaahCard icon={saahIcons.gessoIcon} width={300}>
+                  Rebaixamento <span>em gesso</span>
+                </SaahCard>
+                <SaahCard icon={saahIcons.pisoIcon} width={310}>
+                  <span>Piso vinílico</span> nos apartamentos
+                </SaahCard>
+              </Reveal>
+            </div>
+            <div className="saah-cards-container">
+              <Reveal cascade triggerOnce delay={1000}>
+                <SaahCard icon={saahIcons.lockIcon} width={310}>
+                  Portas com <span>fechadura eletrônica</span>
+                </SaahCard>
+                <SaahCard icon={saahIcons.ecarIcon} width={515}>
+                  <span>1 Vaga exclusiva</span> para carregamento de <span>carros elétricos</span> por pavimento de garagem
+                </SaahCard>
+                <SaahCard icon={saahIcons.aguaIcon} width={415}>
+                  Captação de <span>água das chuvas</span> e do <span>ar condicionado</span>
+                </SaahCard>
+              </Reveal>
+            </div>
+            
           </div>
-          <h1 className="saah-footer">Tudo isso com inteligência artificial.</h1>
         </div>
       </div>
 
