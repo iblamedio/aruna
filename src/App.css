@@ -191,30 +191,45 @@ img.carousel-image {
   width:100vw;
   padding:120px 0;
   background-color: #12070D;
+  display:flex;
+  justify-content:center;
 }
 
 div.third-content {
-  width:1064px;
-  margin:auto;
+  width:1280px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
 div.third-content .title {
-  width:100%;
-  text-align:center;
-  font-family: 'Slash Signature Personal Use';
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 110px;
-  color: #F7B142;
+  margin:auto;
 }
 
-div.third-content p {
-  width:512px;
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color:#F5EDF0;
+div.third-content div.fotos {
+  width:1064px;
+  margin-top:50px;
+  display:flex;
+  justify-content: space-between;
+}
+
+div.third-content div.fotos .foto-container {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+div.third-content div.fotos .foto-container span.areadelazer-foto-legenda {
+font-family: 'Montserrat';
+font-weight: 400;
+font-size: 24px;
+color: #F5EDF0;
+margin-top:10px;
+}
+
+div.third-content div.fotos .foto-container .areadelazer-foto {
+  height:376px;
+  width:305px;
 }
 
 div.third-content p span {
@@ -222,6 +237,14 @@ div.third-content p span {
 }
 
 div.cards {
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  margin-top:75px;
+}
+
+div.cards-line {
+  margin-top:15px;
   display:flex;
   justify-content:space-between;
 }
@@ -391,7 +414,7 @@ div.cards {
 }
 
 div.plant-card {
-  width:400px;
+  width:505px;
   display:flex;
   align-items:center;
   justify-content: start;
@@ -402,7 +425,7 @@ div.plant-card {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 22px;
   color: #F5EDF0;
   padding:5px 0 5px 20px;
   border-left:solid 1px #F7B142;
@@ -410,6 +433,7 @@ div.plant-card {
   height:100px;
   display:flex;
   align-items:center;
+  width:320px;
 }
 
 .plant-card-text span {

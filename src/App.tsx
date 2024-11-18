@@ -18,6 +18,8 @@ import sunsetPlantIcon from './assets/Plant Icons/si_sun-set-line.svg';
 import arunaFrenteImage from './assets/aruna-frente.png';
 import predioIcon from './assets/predio-icon.svg';
 import saahIcons from './assets/Saah Icons';
+import areaDeLazerTitle from './assets/areadelazer-title.svg';
+import areaDeLazerPics from './assets/Fotos Area de Lazer';
 
 import { Button } from './components/button';
 import { Footer } from './components/footer';
@@ -170,38 +172,40 @@ function App() {
           <h1>Planta</h1>
           <div className="post-title-plant">
             <div className="plant-cards">
-              <div className="plant-card">
-                <img src={bedPlantIcon} alt="Cama" />
-                <div className="plant-card-text">
-                  <div>
-                    <span>3</span> dormitórios sendo 1 suíte
+              <Reveal cascade triggerOnce>
+                <div className="plant-card">
+                  <img src={bedPlantIcon} alt="Cama" />
+                  <div className="plant-card-text">
+                    <div>
+                      Opções com <span>2, 3</span> suítes ou<span>1</span> suíte + <span>2</span> demi-suítes
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="plant-card">
-                <img src={carPlantIcon} alt="Carro" />
-                <div className="plant-card-text">
-                  <div>
-                    <span>2</span> vagas de garagem
+                <div className="plant-card">
+                  <img src={carPlantIcon} alt="Carro" />
+                  <div className="plant-card-text">
+                    <div>
+                      Até <span>2</span> vagas de garagem por apartamento
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="plant-card">
-                <img src={sofaPlantIcon} alt="Sofa" />
-                <div className="plant-card-text">
-                  <div>
-                    Amplo Living com <span>3</span> ambientes
+                <div className="plant-card">
+                  <img src={sofaPlantIcon} alt="Sofa" />
+                  <div className="plant-card-text">
+                    <div>
+                      Amplo Living com <span>3</span> ambientes
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="plant-card">
-                <img src={sunsetPlantIcon} alt="Pôr do sol" />
-                <div className="plant-card-text">
-                  <div>
-                    Sacada ampla com churrasqueira
+                <div className="plant-card">
+                  <img src={sunsetPlantIcon} alt="Pôr do sol" />
+                  <div className="plant-card-text">
+                    <div>
+                      Sacada ampla com churrasqueira
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Reveal>
             </div>
             <img src={plantImage} alt="Planta" className="plant-image" />
           </div>
@@ -214,41 +218,45 @@ function App() {
             <img className="left-palm-tree" src={palmTree} alt="palm tree leaf" />
         </div>
         <div className="third-content">
-          <div className="title">Elevador Solaris</div>
-          <p>
-            Criada para elevar o padrão de <span>conforto</span> e <span>confiabilidade</span> do mercado, 
-            a linha <span>Solaris</span> utiliza uma automação desenvolvida especialmente para essa aplicação, 
-            com tecnologia de ponta em <span>hardware</span> e <span>software</span>. 
-            <br/><br/>
-            <span>Tudo para cumprir com o objetivo maior, sem falhar no básico: disponibilidade</span>
-          </p>
+          <img src={areaDeLazerTitle} alt="Área de Lazer" className="title"/>
+          <div className="fotos">
+            <Reveal cascade triggerOnce>
+              <div className="foto-container">
+                    <img src={areaDeLazerPics.brinquedoteca} alt="Brinquetoca" className="areadelazer-foto" />
+                    <span className="areadelazer-foto-legenda">BRINQUEDOTECA</span>
+              </div>
+              <div className="foto-container">
+                    <img src={areaDeLazerPics.playground} alt="Playground" className="areadelazer-foto" />
+                    <span className="areadelazer-foto-legenda">PLAYGROUND</span>
+              </div>
+              <div className="foto-container">
+                    <img src={areaDeLazerPics.espaçoPet} alt="Espaço Pet" className="areadelazer-foto" />
+                    <span className="areadelazer-foto-legenda">ESPAÇO PET</span>
+              </div>
+            </Reveal>
+          </div>
 
           <div className="cards">
-            <div className="col-one">
+            <div className="cards-line">
               <Reveal cascade triggerOnce>
-                <Card icon={cardIcons.conectividade} cardTitle="CONECTIVIDADE">
-                  Todos os elevadores estão conectados através da internet com o sistema Zeus.
-                </Card>
-                <Card icon={cardIcons.monitor} cardTitle="MONITORAMENTO EM TEMPO REAL">
-                  Todas as falhas e dados de funcionamento são armazenados em um banco de dados remoto.
-                </Card>
-                <Card id="alarme" icon={cardIcons.alarme} cardTitle="BOTÃO DE ALARME INTELIGENTE">
-                  Além de gerar uma chamada local de socorro, o botão de alarme também chama um técnico.
-                </Card>
+                <Card icon={cardIcons.academia}>ACADEMIA</Card>
+                <Card icon={cardIcons.brinquedoteca}>BRINQUEDOTECA</Card>
+                <Card icon={cardIcons.salaoDeFesta}>SALÃO DE FESTA</Card>
+                <Card icon={cardIcons.prainha}>PRAINHA</Card>
+                <Card icon={cardIcons.espacoGourmet}>ESPAÇO GOURMET</Card>
+                <Card icon={cardIcons.piscina}>PISCINA ADULTO E INFANTIL</Card>
               </Reveal>
             </div>
-            <div className="col-two">
-              <Reveal cascade triggerOnce delay={1500}>
-                <Card icon={cardIcons.estacionamento} cardTitle="ESTACIONAMENTO INTELIGENTE">
-                  Agora é o elevador que te espera, através de um sistema de inteligência artificial.
-                </Card>
-                <Card icon={cardIcons.eficiencia} cardTitle="EFICIÊNCIA ENERGÉTICA">
-                  Motor gearless, iluminação LED, fontes de alimentação de alto rendimento, etc.
-                </Card>
-                <Card id="economia" icon={cardIcons.economia} cardTitle="ECONOMIA EM 2 NÍVEIS">
-                  Através do stand-by e e do power-down, o elevador reduz o consumo de energia ainda mais.
-                </Card>
+            <div className="cards-line">
+              <Reveal cascade triggerOnce delay={1000}>
+                <Card icon={cardIcons.sauna}>SAUNA A VAPOR</Card>
+                <Card icon={cardIcons.espacoPet}>ESPAÇO PET</Card>
+                <Card icon={cardIcons.pracaDeFogo}>PRAÇA DE FOGO</Card>
+                <Card icon={cardIcons.playground}>PLAYGROUND</Card>
+                <Card icon={cardIcons.spa}>DUAS ÁREAS <br/> DE SPA</Card>
+                <Card icon={cardIcons.salaDeJogos}>SALA DE JOGOS <br/>COM PUB</Card>
               </Reveal>
+              
             </div>
           </div>
 
