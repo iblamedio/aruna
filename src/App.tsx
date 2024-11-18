@@ -27,6 +27,7 @@ import { MapComponent } from './components/map';
 import { Card } from './components/card';
 import { SaahCard } from './components/saah-card';
 import { Form } from './components/form';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
   return (
     <div className="App">
       
+      <Toaster/>
 
       <div className="first-section">
         <div className="first-section-content">
@@ -222,8 +224,6 @@ function App() {
 
       <div className="third-section">
         <div className="third-bg">
-            <img className="third-aruna-bg" src={arunaLogoYellow} alt="Aruna Logo" />
-            <img className="left-palm-tree" src={palmTree} alt="palm tree leaf" />
         </div>
         <div className="third-content">
           <img src={areaDeLazerTitle} alt="Área de Lazer" className="title"/>

@@ -2,16 +2,24 @@
     width:197px;
     height:128px;
     background: 
-    linear-gradient(#1b1117 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(hsl(324, 23%, 9%) 0 0) padding-box, /*this is your grey background*/
     linear-gradient(to bottom, #12070D, #F7B142) border-box;
-    color: #F5EDF0;
+    color: hsl(338, 29%, 95%);
     border: 1px solid transparent;
     border-radius: 15px;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
+    transition:.2s;
+}
 
+.card:hover {
+    transition:.2s;
+    transform: translate(0px, -8px);
+    background: 
+    linear-gradient(hsl(324, 23%, 12%) 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(to bottom, #12070D, #F7B142) border-box;
 }
 
 .card-text {

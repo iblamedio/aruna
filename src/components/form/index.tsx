@@ -1,13 +1,20 @@
 import { FunctionComponent, useRef, useState } from "react";
 import InputMask from '@mona-health/react-input-mask';
-
-// import { emailjs } from 'emailjs';
+import emailjs from '@emailjs/browser';
+import toast from "react-hot-toast";
 
 import './styles.css';
 
-import arunaFoto from '../../assets/aruna-foto.png';
+import arunaFoto from '../../assets/image 1.jpg';
 
 export const Form: FunctionComponent = () => {
+
+  const envServiceId: string = process.env.REACT_APP_EMAILJS_SERVICE_ID || '';
+  const envTemplateId: string = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || '';
+
+  const [isLoading, setLoading] = useState(false);
+
+
 
     const form: any = useRef();
 
@@ -35,10 +42,20 @@ export const Form: FunctionComponent = () => {
       setMessageValue(e.target.value);
     }
 
+    const clearInputs: () => void = () => {
+      setNameValue('');
+      setPhoneValue('');
+      setEmailValue('');
+      setMessageValue('');
+    }
+
     const validateName: (input: string) => boolean = input => !!input;
 
     const validatePhone: (input: string) => boolean = input => {
-      if(!input) return false;
+      if (!input) return false;
+
+      if ( input.length < 14 ) return false;
+
       return true;
     }
 
@@ -56,21 +73,23 @@ export const Form: FunctionComponent = () => {
       if (!validateEmail(emailValue)) setEmailErr(true); else setEmailErr(false);
 
       if (!validateName(nameValue) || !validatePhone(phoneValue) || !validateEmail(emailValue)) return;
-      
-      console.log(nameValue, emailValue, phoneValue, messageValue);
+
+      setLoading(true);
     
-    //     emailjs
-    //       .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-    //         publicKey: 'YOUR_PUBLIC_KEY',
-    //       })
-    //       .then(
-    //         () => {
-    //           console.log('SUCCESS!');
-    //         },
-    //         (error) => {
-    //           console.log('FAILED...', error.text);
-    //         },
-    //       );
+      emailjs.sendForm(envServiceId,
+        envTemplateId,
+        form.current,
+        { publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY }
+      ).then(() => {
+          toast.success('Enviado com sucesso!');
+          clearInputs();
+          setLoading(false);
+        }, e => {
+          toast.error('Houve um erro ao enviar sua mensagem :(');
+          clearInputs();
+          setLoading(false);
+        }
+      );
       };
 
     return (
@@ -87,13 +106,13 @@ export const Form: FunctionComponent = () => {
                     </div>
                     <form ref={form} onSubmit={sendEmail}>
                       <div className="line">
-                        <input required autoComplete="off" className={ nameErr ? 'input-error' : '' } type="text" name="name" value={nameValue} onChange={handleNameChange}/>
+                        <input disabled={isLoading} required autoComplete="off" className={ nameErr ? 'input-error' : '' } type="text" name="name" value={nameValue} onChange={handleNameChange}/>
                         <label>Nome</label>
                         <span style={ nameErr ? {} : {display:'none' }}>Insira um nome válido.</span>
                       </div>
                         
                       <div className="line">
-                        <input required autoComplete="off" className={ emailErr ? 'input-error' : '' } type="text" name="email" value={emailValue} onChange={handleEmailChange}/>
+                        <input disabled={isLoading} required autoComplete="off" className={ emailErr ? 'input-error' : '' } type="text" name="email" value={emailValue} onChange={handleEmailChange}/>
                         <label>Email</label>
                         <span style={ emailErr ? {} : {display:'none' }}>Insira um email válido.</span>
                       </div>
@@ -110,18 +129,19 @@ export const Form: FunctionComponent = () => {
                           onChange={handlePhoneChange}
                           required
                           autoComplete="off"
+                          disabled={isLoading}
                         />
                         <label>Telefone</label>
-                        <span style={ phoneErr ? {} : {display:'none' }}>Insira um telefone válido.</span>
+                        <span style={ phoneErr ? {} : {display:'none' } }>Insira um telefone válido.</span>
                       </div>
                         
                       <div className="line">
-                        <textarea required name="message" value={messageValue} onChange={handleMessageChange} autoComplete="off"/>
+                        <textarea disabled={isLoading} required name="message" value={messageValue} onChange={handleMessageChange} autoComplete="off"/>
                         <label id="textarea-label">Mensagem</label>
                       </div>
 
                       <div className="line">
-                        <input type="submit" value="ENVIAR" />
+                        <input className={ isLoading ? 'disabled-button' : '' }  disabled={isLoading} id="submit-form" type="submit" value="ENVIAR" />
                       </div>
 
                     </form>
