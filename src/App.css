@@ -12,32 +12,13 @@ body {
 }
 
 .first-section {
-  background-color:#12070D !important;
+  background-color:#12070D;
   height:820px;
   width:100vw;
   padding:0;
   display:flex;
   justify-content:center;
-}
-
-.first-section-bg-image {
-  width:1600px;
-  height:900px;
-  top:-80px;
-  right:-376px;
-  position:absolute;
-  z-index:1;
-  clip-path: inset(0 376px 0 0);
-}
-
-.first-section-gradient {
-  width:100vw;
-  background:linear-gradient(270deg, rgba(17, 6, 12, 0.33) 39.64%, #12070D 54.9%);
-  z-index:2;
-  position:absolute;
-  top:0;
-  left:0;
-  height:820px;
+  align-items:center;
 }
 
 .first-section-content {
@@ -45,32 +26,32 @@ body {
   height:820px;
   width:1280px;
   margin:auto;
-  z-index:3;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
 }
 
 .first-section-content .first-group {
   width:460px;
-  height:150px;
-  margin-top:180px;
+  margin-bottom:48px;
 }
 
 .first-section-content .first-group span.local {
   font-family: 'Montserrat';
   font-weight: 600;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 20px;
   color: #F5EDF0;
 }
 
 .first-section-content .first-group span.local span {
-  color: #b1b1b1;
   font-weight: 400;
 }
 
 .title-logo {
-  width:70px;
-  height:70px;
-  margin:10px 0;
+  width:40px;
+  height:40px;
+  margin:0;
 }
 
 .first-section-content .first-group .second-line {
@@ -81,45 +62,81 @@ body {
 .title {
   display:flex;
   flex-direction:column;
-  margin-left:15px;
+  margin-left:8px;
 }
 
 .title .line-one {
   font-family: 'Montserrat';
   font-weight: 600;
-  font-size: 40px;
+  font-size: 24px;
   line-height: 25px;
   color: #F5EDF0;
 }
 
 
 .line-two {
-  color: #b1b1b1;
+  color: #F5EDF0;
   font-weight:300;
-  font-size:24px;
+  font-size:14px;
   letter-spacing: 1.05em;
 }
 
 .sub-headline {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 29px;
+  font-weight: 600;
+  font-size: 48px;
   color: #F5EDF0;
-  width:475px;
-  margin-top:5px;
+  width:670px;
+  line-height: 54px;
 }
 
 .sub-headline span {
-  font-weight: 600;
+  font-weight: 800;
+}
+
+.hero {
+  width:680px;
+  height:610px;
+  position:relative;
+  display:flex;
+  justify-content:flex-end;
+}
+
+.hero-rec-one, .hero-rec-two {
+  position: absolute;
+  background: linear-gradient(to bottom, hsl(37, 92%, 61%),hsl(37, 92%, 70%));
+  border-radius: 15px;
+  flex-shrink:0;
+}
+
+.hero-rec-one {
+  left: 50px;
+  top: -15px;
+  width: 118px !important;
+  height: 154px !important;
+  z-index:1;
+}
+
+.hero-rec-two {
+  width: 276px;
+  height: 273px;
+  right: -50px;
+  bottom: 15px;
+}
+
+
+.hero img {
+  width:505px;
+  height:530px;
+  box-shadow: 0px 0px 17.9px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  right:0px;
+  z-index:2;
 }
 
 .second-section {
   background-color:#F5EDF0;
-  background-image: url("./assets/Aruna-logo-outline.png");
-  background-position:top 0px left -900px;
-  background-repeat: no-repeat;
   width:100vw;
   margin:0 !important;
   padding-top:180px;
@@ -127,7 +144,7 @@ body {
 }
 
 div.carousel-bg {
-  background: #F7B142;
+  background: linear-gradient(to bottom, hsl(37, 92%, 61%),hsl(37, 92%, 70%));
   width:100vw;
   height:450px;
 }
@@ -159,9 +176,10 @@ img.carousel-image {
   display:flex;
   justify-content:end;
   align-items:center;
-  font-family:'Hurricane';
-  font-size:64px !important;
+  font-family:'Montserrat';
+  font-size:40px !important;
   padding-right:50px !important;
+  font-weight:300;
 }
 
 .after-carousel {
@@ -342,6 +360,8 @@ div.cards-line {
   margin-top:-25px;
   box-shadow: 0px 0px 16.1px 8px rgba(0, 0, 0, 0.377);
   color:#F7B142;
+  height:630px;
+  width:600px;
 }
 
 .saah-icon {
@@ -396,7 +416,10 @@ div.cards-line {
   font-weight: 600;
   font-size: 48px;
   line-height: 59px;
-  color: #F7B142;
+  background: linear-gradient(to right, hsl(37, 92%, 61%), hsl(37, 92%, 70%));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width:fit-content;
 }
 
 .post-title-plant {

@@ -1,0 +1,112 @@
+.form-container {
+    width:100vw;
+    background-color:#F5EDF0;
+}
+
+.form-content {
+    width:1280px;
+    height:100%;
+    margin:auto;
+    display:flex;
+    color:#12070D;
+    padding:120px 0;
+}
+
+.form-left, .form-right {
+    width:50%;
+    height:100%;
+}
+
+.form-left img {
+    width:550px;
+    height:600px;
+    box-shadow: 0px 0px 16.1px 8px rgba(0, 0, 0, 0.514);
+}
+
+.form-right {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height:600px;
+}
+
+.form-right h1, .form-right p {
+    font-family:'Montserrat';
+    margin:0;
+}
+
+.form-right h1 {
+    font-weight:600;
+}
+
+.form-right p {
+    margin-top:15px;
+}
+
+.input-error {
+    background-color:lightcoral !important;
+    color:red !important;
+}
+
+label {
+    font-family:'Montserrat';
+    font-weight:300;
+}
+
+input[type=text], textarea {
+    outline:none;
+    border-radius:.2em;
+}
+
+.line {
+    display:flex;
+    flex-direction:column;
+    margin-top:15px;
+}
+
+.line{
+    position: relative;
+}
+
+.line input, .line textarea{
+    width: 350px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 10px;
+    border: 2px solid #b1b1b1;
+    background: transparent;
+    color: #12070D;
+    outline: none;
+    font-family:'Montserrat';
+}
+
+.line label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #b1b1b1;
+    font-size: 19px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+    top: 0 !important;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 2px;
+    background-color: #F5EDF0;
+}
+
+#textarea-label {
+    top:25%
+}
+
+textarea {
+    height:110px !important;
+}

@@ -9,13 +9,12 @@ button.button {
     width: 413px;
     height: 60px;
     color: #13080E;
-    background: #F7B142;
+    background:linear-gradient(to bottom,hsl(37, 92%, 61%) 70%, hsl(37, 92%, 70%));
     border-radius: 5px;
     outline:none;
     border:none;
     cursor:pointer;
     transition:.2s;
-    margin-top:50px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -23,7 +22,7 @@ button.button {
   
   button.button:hover {
     transition:.2s;
-    background:#ac7112;
+    transform:translate(0, -4px);
   }
 
   button.button img {

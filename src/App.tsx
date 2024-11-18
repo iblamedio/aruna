@@ -4,7 +4,6 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Reveal } from 'react-awesome-reveal';
 import { Carousel } from 'react-responsive-carousel';
 
-import firstSectionBgImage from './assets/image 1.jpg';
 import arunaLogoYellow from './assets/Aruna-logo-yellow.png';
 import carouselImages from './assets/Fotos Aruna';
 import slogan from './assets/slogan.svg';
@@ -20,12 +19,14 @@ import predioIcon from './assets/predio-icon.svg';
 import saahIcons from './assets/Saah Icons';
 import areaDeLazerTitle from './assets/areadelazer-title.svg';
 import areaDeLazerPics from './assets/Fotos Area de Lazer';
+import arunaFoto from './assets/aruna-foto.png';
 
 import { Button } from './components/button';
 import { Footer } from './components/footer';
 import { MapComponent } from './components/map';
 import { Card } from './components/card';
 import { SaahCard } from './components/saah-card';
+import { Form } from './components/form';
 
 function App() {
 
@@ -36,35 +37,42 @@ function App() {
       
 
       <div className="first-section">
-        <img src={firstSectionBgImage} className="first-section-bg-image"/>
-        <div className="first-section-gradient"/>
         <div className="first-section-content">
+          <div className="first-left">
+            <div className="first-group">
+              <Reveal cascade triggerOnce>
 
-          <div className="first-group">
-            <Reveal cascade triggerOnce>
-
-              <span className="local">ITAPEMA · <span>MEIA PRAIA</span></span>
-              <div className="second-line">
-                <img src={arunaLogoYellow} className="title-logo" />
-                <div className="title">
-                  <span className="line-one">ARUNA TOWER</span>
-                  <span className="line-two">RESIDENCE</span>
+                <span className="local">ITAPEMA · <span>MEIA PRAIA</span></span>
+                <div className="second-line">
+                  <img src={arunaLogoYellow} className="title-logo" />
+                  <div className="title">
+                    <span className="line-one">ARUNA TOWER</span>
+                    <span className="line-two">RESIDENCE</span>
+                  </div>
                 </div>
+
+              </Reveal>
+            </div>
+            <Reveal cascade triggerOnce delay={1000}>
+
+              <div className="sub-headline">
+                Quando o <span>sentimento</span> e a <span>consciência</span> tomam a referência de um <span>lar.</span>
+                <br/><br/>
               </div>
 
+              <Button/>
+              
             </Reveal>
           </div>
-    	    <Reveal cascade triggerOnce delay={1000}>
 
-            <div className="sub-headline">
-              Quando o <span>sentimento</span> e a <span>consciência</span> tomam a referência de um <span>lar.</span>
-              <br/><br/>
-            </div>
+          <div className="hero">
+            <div className="hero-rec-one"/>
+            <div className="hero-rec-two"/>
+            <img src={arunaFrenteImage} alt="Aruna Tower" />
+          </div>
 
-            <Button/>
-            
-          </Reveal>
         </div>
+          
           
 
       </div>
@@ -130,7 +138,7 @@ function App() {
               </p>
             </div>
             
-            <img className="saah-image" src={arunaFrenteImage} alt="Aruna Tower"/>
+            <img className="saah-image" src={arunaFoto} alt="Aruna Tower"/>
           </div>
           <div className="saah-cards">
             <div className="saah-cards-container">
@@ -264,6 +272,8 @@ function App() {
       </div>
 
       <MapComponent/>
+
+      <Form/>
 
       <Footer/>
 
