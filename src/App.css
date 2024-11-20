@@ -124,7 +124,6 @@ body {
   bottom: 15px;
 }
 
-
 .hero img {
   width:505px;
   height:530px;
@@ -322,7 +321,7 @@ div.cards-line {
   font-size: 48px;
   line-height: 59px;
   color: #12070D;
-  width:50%;
+  width:90vw;
 }
 
 .saah-headline span {
@@ -471,4 +470,21 @@ div.plant-card {
 
 #aruna-name {
   font-size:36px;
+}
+
+.footer-content {
+  width:90vw !important;
+  max-width:550px;
+  flex-direction:column;
+  align-items:center;
+  margin:auto;
+  padding-top:50px !important;
+}
+
+.right {
+  flex-direction: column;
+}
+
+.socialmedia {
+  margin-top:25px;
 }

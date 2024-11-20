@@ -14,11 +14,6 @@ export const Footer: FunctionComponent = () => {
 
                 <div className="right">
                     <div className="menu">
-                        <span>Menu</span>
-                        <div className="items">
-                            <div>Sobre</div>
-                            <div>Empreendimentos</div>
-                        </div>
                     </div>
                     <div className="socialmedia">
                         <span>Redes Sociais</span>

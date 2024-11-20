@@ -3,12 +3,12 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import { Reveal } from 'react-awesome-reveal';
 import { Carousel } from 'react-responsive-carousel';
+import { Toaster } from 'react-hot-toast';
 
 import arunaLogoYellow from './assets/Aruna-logo-yellow.png';
 import carouselImages from './assets/Fotos Aruna';
 import slogan from './assets/slogan.svg';
 import cardIcons from './assets/Card Icons';
-import palmTree from './assets/palm-tree-leaf-silhouette-vector-illustration_136875-5325.png';
 import plantImage from './assets/planta-legend.png';
 import bedPlantIcon from './assets/Plant Icons/tabler_bed.svg';
 import carPlantIcon from './assets/Plant Icons/bx_car.svg';
@@ -27,9 +27,23 @@ import { MapComponent } from './components/map';
 import { Card } from './components/card';
 import { SaahCard } from './components/saah-card';
 import { Form } from './components/form';
-import { Toaster } from 'react-hot-toast';
+import { Table } from './components/table';
+
+import './mobile.css';
+import { useEffect, useState } from 'react';
 
 function App() {
+
+  const [winWidth, setWinWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleWindowResize = () => setWinWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+ 
+     
+    return () => window.removeEventListener("resize", handleWindowResize);
+   },[]);
+
 
   const _ = require('lodash');
 
@@ -40,6 +54,7 @@ function App() {
 
       <div className="first-section">
         <div className="first-section-content">
+          
           <div className="first-left">
             <div className="first-group">
               <Reveal cascade triggerOnce>
@@ -55,6 +70,14 @@ function App() {
 
               </Reveal>
             </div>
+
+            {winWidth <= 1280 ? ( 
+              <div className="hero">
+                <div className="hero-rec-one-mob"/>
+                <div className="hero-rec-two-mob"/>
+                <img src={arunaFrenteImage} alt="Aruna Tower" />
+              </div> ) : (<div/>)
+            }
             <Reveal cascade triggerOnce delay={1000}>
 
               <div className="sub-headline">
@@ -66,12 +89,14 @@ function App() {
               
             </Reveal>
           </div>
-
-          <div className="hero">
+          {winWidth > 1280 ? ( 
+            <div className="hero">
             <div className="hero-rec-one"/>
             <div className="hero-rec-two"/>
             <img src={arunaFrenteImage} alt="Aruna Tower" />
-          </div>
+          </div> ) : (<div/>)
+          }
+          
 
         </div>
           
@@ -134,13 +159,15 @@ function App() {
                 esperança”.</span>
               </p>
 
+              {winWidth <= 1280 ? (<img className="saah-image" src={arunaFoto} alt="Aruna Tower"/>) : (<div/>)}
+
               <img className="saah-icon" src={predioIcon} alt="O Empreendimento" />
               <p className="second-paragraph">
                 O Empreendimento:
               </p>
             </div>
             
-            <img className="saah-image" src={arunaFoto} alt="Aruna Tower"/>
+            {winWidth > 1280 ? (<img className="saah-image" src={arunaFoto} alt="Aruna Tower"/>) : (<div/>)}
           </div>
           <div className="saah-cards">
             <div className="saah-cards-container">
@@ -272,6 +299,8 @@ function App() {
       </div>
 
       <MapComponent/>
+
+      <Table/>
 
       <Form/>
 
