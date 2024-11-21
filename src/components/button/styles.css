@@ -18,8 +18,11 @@ button.button {
     display:flex;
     justify-content:center;
     align-items:center;
+    text-decoration: none;
   }
   
+  a, u { text-decoration: none; } 
+
   button.button:hover {
     transition:.2s;
     transform:translate(0, -4px);
