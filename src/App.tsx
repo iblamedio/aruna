@@ -172,7 +172,6 @@ function App() {
           </div>
           <div className="saah-cards">
             <div className="saah-cards-container">
-              <Reveal cascade triggerOnce>
                 <SaahCard icon={saahIcons.sparkIcon} width={310}>
                   Hall de entrada + áreas comuns <span>finamente decoradas</span>
                 </SaahCard>
@@ -185,10 +184,8 @@ function App() {
                 <SaahCard icon={saahIcons.pisoIcon} width={310}>
                   <span>Piso vinílico</span> nos apartamentos
                 </SaahCard>
-              </Reveal>
             </div>
             <div className="saah-cards-container">
-              <Reveal cascade triggerOnce delay={1000}>
                 <SaahCard icon={saahIcons.lockIcon} width={310}>
                   Portas com <span>fechadura eletrônica</span>
                 </SaahCard>
@@ -198,7 +195,6 @@ function App() {
                 <SaahCard icon={saahIcons.aguaIcon} width={415}>
                   Captação de <span>água das chuvas</span> e do <span>ar condicionado</span>
                 </SaahCard>
-              </Reveal>
             </div>
             
           </div>
@@ -210,7 +206,6 @@ function App() {
           <h1>Planta</h1>
           <div className="post-title-plant">
             <div className="plant-cards">
-              <Reveal cascade triggerOnce>
                 <div className="plant-card">
                   <img src={bedPlantIcon} alt="Cama" />
                   <div className="plant-card-text">
@@ -243,7 +238,6 @@ function App() {
                     </div>
                   </div>
                 </div>
-              </Reveal>
             </div>
             <img src={plantImage} alt="Planta" className="plant-image" />
           </div>
@@ -274,25 +268,20 @@ function App() {
 
           <div className="cards">
             <div className="cards-line">
-              <Reveal cascade triggerOnce>
                 <Card icon={cardIcons.academia}>ACADEMIA</Card>
                 <Card icon={cardIcons.brinquedoteca}>BRINQUEDOTECA</Card>
                 <Card icon={cardIcons.salaoDeFesta}>SALÃO DE FESTA</Card>
                 <Card icon={cardIcons.prainha}>PRAINHA</Card>
                 <Card icon={cardIcons.espacoGourmet}>ESPAÇO GOURMET</Card>
                 <Card icon={cardIcons.piscina}>PISCINA ADULTO E INFANTIL</Card>
-              </Reveal>
             </div>
             <div className="cards-line">
-              <Reveal cascade triggerOnce delay={1000}>
                 <Card icon={cardIcons.sauna}>SAUNA A VAPOR</Card>
                 <Card icon={cardIcons.espacoPet}>ESPAÇO PET</Card>
                 <Card icon={cardIcons.pracaDeFogo}>PRAÇA DE FOGO</Card>
                 <Card icon={cardIcons.playground}>PLAYGROUND</Card>
                 <Card icon={cardIcons.spa}>DUAS ÁREAS <br/> DE SPA</Card>
                 <Card icon={cardIcons.salaDeJogos}>SALA DE JOGOS <br/>COM PUB</Card>
-              </Reveal>
-              
             </div>
           </div>
 

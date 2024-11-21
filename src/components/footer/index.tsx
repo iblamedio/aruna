@@ -13,18 +13,12 @@ export const Footer: FunctionComponent = () => {
                 </div>
 
                 <div className="right">
-                    <div className="menu">
-                    </div>
                     <div className="socialmedia">
                         <span>Redes Sociais</span>
                         <div className="icons">
-                            {Object.entries(icons).map(([key, value]) => {
-                                return (
-                                    <div className="icon" key={key}>
-                                        <img src={value} alt={key} />
-                                    </div>
-                                )
-                            })}
+                            <div className="icon" onClick={() => window.open("https://www.instagram.com/avicenteempreendimentos/")}>
+                                <img src={icons.instagram} alt="instagram"/>
+                            </div>
                         </div>
                         <Button/>
                     </div>
