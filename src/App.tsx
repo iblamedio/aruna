@@ -4,6 +4,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Reveal } from 'react-awesome-reveal';
 import { Carousel } from 'react-responsive-carousel';
 import { Toaster } from 'react-hot-toast';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 import arunaLogoYellow from './assets/Aruna-logo-yellow.png';
 import carouselImages from './assets/Fotos Aruna';
