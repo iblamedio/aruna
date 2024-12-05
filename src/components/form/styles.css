@@ -26,8 +26,7 @@
 
 .form-left img {
     height:600px;
-    box-shadow:0px 0px 15px 15px rgba(0, 0, 0, 0.233);
-    border-radius:15px;
+    border-radius:5px;
 }
 
 .form-right {

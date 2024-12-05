@@ -116,7 +116,7 @@ export const Table: FunctionComponent = () => {
 
                     <div className="table-two">
                         <h3>APTO TIPO 02 (2 SUITES)</h3>
-                        <h4>89,80m² de área privativa + 2 vagas de garagem</h4>
+                        <h4>89,80m² de área privativa + até 2 vagas de garagem privativa, a consultar a unidade</h4>
                         <table>
                             <thead>
                                 <tr>

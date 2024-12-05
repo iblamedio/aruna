@@ -45,8 +45,8 @@
 
     .hero-rec-one-mob {
         position: absolute;
-        background: linear-gradient(to bottom, hsl(37, 92%, 61%),hsl(37, 92%, 70%));
-        border-radius: 15px;
+        background: transparent;
+        border:3px solid #F7B142;
         flex-shrink:0;
         right: -25px;
         bottom: -25px;
@@ -58,8 +58,8 @@
 
     .hero-rec-two-mob {
         position: absolute;
-        background: linear-gradient(to bottom, hsl(37, 92%, 61%),hsl(37, 92%, 70%));
-        border-radius: 15px;
+        background: transparent;
+        border:3px solid #F7B142;
         flex-shrink:0;
         left: -25px;
         top: -25px;

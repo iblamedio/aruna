@@ -11,7 +11,8 @@ body {
 }
 
 .first-section {
-  background-color:#12070D;
+  /*background-*/color:#12070D;
+  background-color: #F5EDF0;
   height:820px;
   width:100vw;
   padding:0;
@@ -40,7 +41,6 @@ body {
   font-weight: 600;
   font-size: 12px;
   line-height: 20px;
-  color: #F5EDF0;
 }
 
 .first-section-content .first-group span.local span {
@@ -69,12 +69,10 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 25px;
-  color: #F5EDF0;
 }
 
 
 .line-two {
-  color: #F5EDF0;
   font-weight:300;
   font-size:14px;
   letter-spacing: 1.05em;
@@ -85,7 +83,6 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
-  color: #F5EDF0;
   width:670px;
   line-height: 54px;
 }
@@ -104,8 +101,8 @@ body {
 
 .hero-rec-one, .hero-rec-two {
   position: absolute;
-  background: linear-gradient(to bottom, hsl(37, 92%, 61%),hsl(37, 92%, 70%));
-  border-radius: 15px;
+  background: transparent;
+  border:3px solid #F7B142;
   flex-shrink:0;
 }
 
@@ -127,10 +124,9 @@ body {
 .hero img {
   width:505px;
   height:530px;
-  box-shadow: 0px 0px 17.9px 7px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
   right:0px;
   z-index:2;
+  border-radius:5px;
 }
 
 .second-section {
@@ -362,11 +358,10 @@ div.cards-line {
 
 .saah-stuff .saah-image {
   margin-top:-25px;
-  box-shadow: 0px 0px 16.1px 8px rgba(0, 0, 0, 0.377);
   color:#F7B142;
   height:630px;
   width:600px;
-  border-radius:15px;
+  border-radius:5px;
 }
 
 .saah-icon {

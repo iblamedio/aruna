@@ -1,98 +1,141 @@
-.footer {
-    background-color: #12070D;
-    width:100vw;
-}
-
-.footer-content {
-    width:1280px;
+  section.footer {
+    background-color:#12070D;
+    padding:8rem 0;
+    font-family:'Montserrat';
+  }
+  
+  section.footer div.content {
+    width:90%;
+    max-width:1280px;
     margin:auto;
     display:flex;
     justify-content:space-between;
-    padding:120px 0;
-}
-
-.footer-content img.company-logo {
-    height:180px;
-    width:180px;
-    cursor:pointer;
-    transition:.2s;
-}
-
-.footer-content img.company-logo:hover {
-    transition:.2s;
-    transform:scale(1.1);
-}
-
-.socialmedia span, .menu span {
-    color:#F5EDF0;
-    font-family:'Montserrat';
-    font-weight: 600;
-    font-size:20px;
-}
-
-.socialmedia .icons {
-    width:170px;
-    display:flex;
-    justify-content:space-between;
-    margin-top:15px;
-}
-
-.socialmedia .icon {
-    background-color:#F5EDF0;
-    width:fit-content;
-    padding:8px;
-    border-radius:15em;
-    cursor:pointer;
-    transition:.2s;
-}
-
-.socialmedia .icon:hover {
-    transition:.2s;
-    background-color:#F7B142;
-}
-
-.socialmedia .icon img {
-    width:24px;
-    height:24px;
-}
-
-div.right {
+    flex-wrap:wrap;
+    gap:4rem;
+  }
+  
+  section.footer div.logo {
     height:fit-content;
     display:flex;
-}
-
-div.menu {
-    width:280px;
-}
-
-.socialmedia button {
-    width:220px;
-    margin-top:15px;
-    font-size:14px;
-}
-
-.socialmedia button img {
-    height:14px;
-    width:14px;
-    margin-right:5px;
-}
-
-div.menu div.items {
-    margin-top:15px;
-    color:#b1b1b1;
-    font-family:'Montserrat';
-    font-weight: 300;
-    font-size:16px;
-}
-
-div.menu div.items div {
-    transition:.2s;
+    gap:1rem;
+  }
+  
+  section.footer div.logo-text {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
     cursor:pointer;
-    width:fit-content;
-    padding:1px 0;
-}
-
-div.menu div.items div:hover {
-    transition:.2s;
+  }
+  
+  section.footer div.logo-text span {
+    color:#fff !important;
+  }
+  
+  section.footer div.logo-text span:first-child {
+    font-size:2rem;
+    font-weight:600;
+  } 
+  
+  section.footer div.logo-text span:last-child {
+    font-size:1rem;
+    letter-spacing:.1em;
+  }
+  
+  section.footer span {
+    color: hsl(0, 0%, 80%);
+  }
+  
+  section.footer h4 {
+    margin:0;
+    font-size:1.25rem;
+    color:#fff;
+    line-height:3em;
+  }
+  
+  section.footer .primary-info {
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+    font-size:1rem;
+  }
+  
+  section.footer .address {
+    display:flex;
+    flex-direction:column;
+  }
+  
+  section.footer .contact-info {
+    display:flex;
+    flex-direction:column;
+    gap:.35rem;
+  }
+  
+  section.footer .phone,
+  section.footer .mail {
+    display:flex;
+    align-items:center;
+    gap:.25rem;
+  }
+  
+  section.footer .secondary-info {
+    display:flex;
+    gap:5rem;
+    text-wrap:nowrap;
+    flex-wrap:wrap;
+  }
+  
+  section.footer .secondary-info img {
+    cursor:pointer;
+  }
+  
+  section.footer a {
+    color:hsl(0, 0%, 80%);
+    text-decoration:none;
+    font-size:1rem;
+  }
+  
+  section.footer a:hover {
     text-decoration:underline;
-}
+  }
+
+  div.instagram a {
+    display:flex;
+    gap:.5rem;
+    align-items: center;
+  }
+
+  .members {
+    display:flex;
+    gap:1rem;
+  }
+
+  .member-card {
+    cursor:pointer;
+    transition:200ms;
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+    font-size:.8rem;
+    width:fit-content;
+  }
+
+  .member-card img {
+    width:55px;
+    height:65px;
+    border-radius:2px;
+  }
+
+  .member-card:hover {
+    transition:200ms;
+    transform:translateY(-4px);
+  }
+
+  .member-card span {
+    transition:200ms;
+    color: #F5EDF0;
+  }
+
+  .member-card:hover span {
+    transition:200ms;
+    color:#F7B142;
+  }
