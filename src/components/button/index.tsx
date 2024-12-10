@@ -5,7 +5,7 @@ import whatsappIcon from '../../assets/whatsapp.svg';
 
 export const Button: FunctionComponent = () => {
     return (
-        <a href="http://wa.me/message/YER7IBRUYLFSD1">
+        <a href="https://api.whatsapp.com/send?phone=47991284827">
             <button className="button">
                 <img src={whatsappIcon} />
                 ENTRAR EM CONTATO

@@ -90,7 +90,7 @@
   
   section.footer a {
     color:hsl(0, 0%, 80%);
-    text-decoration:none;
+    text-decoration:none; 
     font-size:1rem;
   }
   
@@ -98,7 +98,19 @@
     text-decoration:underline;
   }
 
-  div.instagram a {
+  section.footer div.social {
+    display:flex;
+    flex-direction: column;
+    gap:.5rem;
+  }
+
+  section.footer div.social img {
+    width:20px;
+    height:20px;
+  }
+
+  div.instagram a,
+  div.linkedin a {
     display:flex;
     gap:.5rem;
     align-items: center;
@@ -115,19 +127,26 @@
     display:flex;
     flex-direction:column;
     gap:.5rem;
-    font-size:.8rem;
+    font-size:1rem;
     width:fit-content;
   }
 
   .member-card img {
-    width:55px;
-    height:65px;
+    width:125px;
     border-radius:2px;
+    filter:saturate(0%);
+    transition:200ms;
+  }
+
+  .member-card:hover img {
+    transition:200ms;
+    filter:saturate(100%);
   }
 
   .member-card:hover {
     transition:200ms;
     transform:translateY(-4px);
+    filter:saturate(100%);
   }
 
   .member-card span {
