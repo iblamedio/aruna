@@ -5,7 +5,6 @@ import vicenteLogoWhite from '../../assets/vicente-logo-white.svg';
 import instagramLogo from '../../assets/instagram.svg';
 import linkedinLogo from '../../assets/Social Media Icons/linkedin.svg';
 
-import liamara from '../../assets/Time Comercial/liamara.webp';
 import andre from '../../assets/Time Comercial/andre.webp';
 import kurt from '../../assets/Time Comercial/kurt.webp';
 
@@ -50,10 +49,6 @@ export const Footer: FunctionComponent = () => {
                         <div className="member-card" onClick={() => window.open("https://api.whatsapp.com/send?phone=5547992845867")}>
                             <img src={andre} alt="André" />
                             <span>André ›</span>
-                        </div>
-                        <div className="member-card" onClick={() => window.open("https://api.whatsapp.com/send?phone=5547992433828")}>
-                            <img src={liamara} alt="Liamara" />
-                            <span>Liamara ›</span>
                         </div>
                         <div className="member-card" onClick={() => window.open("https://api.whatsapp.com/send?phone=47991346194")}>
                             <img src={kurt} alt="Kurt" />

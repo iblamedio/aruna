@@ -30,17 +30,15 @@
         font-size:18px;
       }
     .hero {
-        width:544px;
-        height:auto;
         margin-top:50px;
         display:flex;
         justify-content:center;
+        height:auto;
     }
 
     .hero img {
-        width:90vw;
-        max-width:550px;
-        height:auto !important;
+        max-height:575px;
+        max-width:90vw;
     }
 
     .hero-rec-one-mob {
@@ -200,7 +198,6 @@
       }
 
       img.plant-image {
-        width:90% !important;
         margin-top:25px !important;
       }
 

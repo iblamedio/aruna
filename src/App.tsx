@@ -15,12 +15,13 @@ import bedPlantIcon from './assets/Plant Icons/tabler_bed.svg';
 import carPlantIcon from './assets/Plant Icons/bx_car.svg';
 import sofaPlantIcon from './assets/Plant Icons/mdi_sofa-outline.svg';
 import sunsetPlantIcon from './assets/Plant Icons/si_sun-set-line.svg';
-import arunaFrenteImage from './assets/aruna-frente.png';
+import arunaFrenteImage from './assets/aruna-fachada.webp';
 import predioIcon from './assets/predio-icon.svg';
 import saahIcons from './assets/Saah Icons';
 import areaDeLazerTitle from './assets/areadelazer-title.svg';
 import areaDeLazerPics from './assets/Fotos Area de Lazer';
-import arunaFoto from './assets/aruna-foto.png';
+import arunaFoto from './assets/aruna-lateral.webp';
+import penthouse from './assets/penthouse.webp';
 
 import { Button } from './components/button';
 import { Footer } from './components/footer';
@@ -239,7 +240,14 @@ function App() {
                   </div>
                 </div>
             </div>
-            <img src={plantImage} alt="Planta" className="plant-image" />
+            <div className="plant-images">
+            <Carousel emulateTouch swipeable infiniteLoop showThumbs={false} 
+            showIndicators={true} showStatus={false} width="80%" 
+            autoPlay interval={3000} className="plant-carousel">
+              <img src={plantImage} alt="Planta" className="plant-image" />
+              <img src={penthouse} alt="Penthouse" className="plant-image" />
+            </Carousel>
+            </div>
           </div>
         </div>
       </div>

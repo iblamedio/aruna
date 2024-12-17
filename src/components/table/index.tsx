@@ -403,7 +403,7 @@ export const Table: FunctionComponent = () => {
                                     <td>R$ 12.431,97</td>
                                     <td>R$ 100.000,00</td>
                                     <td>R$ 287.519,55</td>
-                                    <td>R$ 1.916.797,90</td>
+                                    <td>R$ 1.916.797,00</td>
                                 </tr>
                                 <tr>
                                     <td>904</td>

@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 
 import './styles.css';
 
-import arunaFoto from '../../assets/image 1.jpg';
+import arunaFoto from '../../assets/aruna-form.webp';
 
 export const Form: FunctionComponent = () => {
 
@@ -13,8 +13,6 @@ export const Form: FunctionComponent = () => {
   const envTemplateId: string = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || '';
 
   const [isLoading, setLoading] = useState(false);
-
-
 
     const form: any = useRef();
 
