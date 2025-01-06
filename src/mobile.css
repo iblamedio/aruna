@@ -37,7 +37,6 @@
     }
 
     .hero img {
-        max-height:575px;
         max-width:90vw;
     }
 
@@ -345,5 +344,12 @@
   }
   .member-card img {
     width:100%;
+  }
+}
+
+@media (max-width:520px) {
+  .hero img {
+    height:488px;
+    width:390px;
   }
 }

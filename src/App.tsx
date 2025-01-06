@@ -4,7 +4,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Reveal } from 'react-awesome-reveal';
 import { Carousel } from 'react-responsive-carousel';
 import { Toaster } from 'react-hot-toast';
-import { SpeedInsights } from "@vercel/speed-insights/react"
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import arunaLogoYellow from './assets/Aruna-logo-yellow.png';
 import carouselImages from './assets/Fotos Aruna';
@@ -22,6 +22,7 @@ import areaDeLazerTitle from './assets/areadelazer-title.svg';
 import areaDeLazerPics from './assets/Fotos Area de Lazer';
 import arunaFoto from './assets/aruna-lateral.webp';
 import penthouse from './assets/penthouse.webp';
+import garagem from './assets/garagem_humanizada.webp';
 
 import { Button } from './components/button';
 import { Footer } from './components/footer';
@@ -246,6 +247,7 @@ function App() {
             autoPlay interval={3000} className="plant-carousel">
               <img src={plantImage} alt="Planta" className="plant-image" />
               <img src={penthouse} alt="Penthouse" className="plant-image" />
+              <img src={garagem} alt="Garagem" className="plant-image" />
             </Carousel>
             </div>
           </div>
