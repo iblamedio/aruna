@@ -110,7 +110,8 @@
   }
 
   div.instagram a,
-  div.linkedin a {
+  div.linkedin a,
+  div.facebook a {
     display:flex;
     gap:.5rem;
     align-items: center;

@@ -1,0 +1,24 @@
+@media (max-width:1513px) {
+    .penthouse-cards {
+        width:100%;
+        max-width:720px;
+    }
+}
+
+@media (max-width:900px) {
+    .penthouse-content {
+        width:100vw;
+    }
+}
+
+@media (max-width:725px) {
+    .penthouse-cards {
+        width:90%;
+    }
+}
+
+@media (max-width:500px) {
+    .penthouse-card-text {
+        font-size:1rem;
+    }
+}

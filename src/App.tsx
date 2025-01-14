@@ -34,6 +34,7 @@ import { Table } from './components/table';
 
 import './mobile.css';
 import { useEffect, useState } from 'react';
+import Penthouse from './components/penthouse';
 
 function App() {
 
@@ -253,6 +254,8 @@ function App() {
           </div>
         </div>
       </div>
+
+      <Penthouse/>
 
       <div className="third-section">
         <div className="third-bg">

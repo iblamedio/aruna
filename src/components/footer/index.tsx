@@ -4,6 +4,7 @@ import './styles.css';
 import vicenteLogoWhite from '../../assets/vicente-logo-white.svg';
 import instagramLogo from '../../assets/instagram.svg';
 import linkedinLogo from '../../assets/Social Media Icons/linkedin.svg';
+import facebookLogo from '../../assets/Social Media Icons/facebook.svg';
 
 import andre from '../../assets/Time Comercial/andre.webp';
 import kurt from '../../assets/Time Comercial/kurt.webp';
@@ -13,7 +14,7 @@ export const Footer: FunctionComponent = () => {
         <section className="footer">
             <div className="content">
             <div className="primary-info">
-                <div className="logo" onClick={() => window.open('http://avicente.vercel.app')}>
+                <div className="logo" /*onClick={() => window.open('http://avicente.vercel.app')}*/>
                     <img src={vicenteLogoWhite} alt="A. Vicente" />
                     <div className="logo-text">
                         <span>A. VICENTE</span>
@@ -39,7 +40,13 @@ export const Footer: FunctionComponent = () => {
                     <div className="linkedin">
                         <a href="https://www.linkedin.com/company/avemp">
                             <img src={linkedinLogo} alt="Instagram"/>
-                            <span>AVicente Empreendimentos</span>
+                            <span>A Vicente Empreendimentos</span>
+                        </a>
+                    </div>
+                    <div className="facebook">
+                        <a href="https://www.facebook.com/profile.php?id=61570011282723">
+                            <img src={facebookLogo} alt="Instagram"/>
+                            <span>A Vicente Empreendimentos</span>
                         </a>
                     </div>
                 </div>
