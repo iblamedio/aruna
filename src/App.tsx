@@ -35,9 +35,9 @@ import { Table } from './components/table';
 import './mobile.css';
 import { useEffect, useState } from 'react';
 import Penthouse from './components/penthouse';
+import Folder from './components/folder';
 
 function App() {
-
   const [winWidth, setWinWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -52,7 +52,7 @@ function App() {
   const _ = require('lodash');
 
   return (
-    <div className="App">
+    <div className="App" id="App">
       
       <Toaster/>
 
@@ -256,6 +256,8 @@ function App() {
       </div>
 
       <Penthouse/>
+
+      <Folder/>
 
       <div className="third-section">
         <div className="third-bg">

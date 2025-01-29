@@ -1,66 +1,62 @@
-.table-container {
-    width:100vw;
-    font-family:'Montserrat';
-    background-color:#F5EDF0;
+.folder-container {
+    width: 100vw;
+    font-family: 'Montserrat';
+    background-color: #13080E;
 }
 
-.table-content {
-    width:1280px;
-    margin:auto;
-    height:100%;
-    padding:50px 0;
+.folder-content {
+    width: 1280px;
+    margin: auto;
+    height: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
 }
 
-h1, h2 {
-    width:fit-content;
-    margin:0;
-    color:#12070D;
+.folder-content button {
+    color: #13080E;
+    background: linear-gradient(to bottom, hsl(37, 92%, 61%) 70%, hsl(37, 92%, 70%));
+    font-family: 'Montserrat';
+    line-height: 39px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+    cursor: pointer;
+    font-weight: 700;
+    width: 80%;
+    padding: 1rem 0;
+    margin: auto;
 }
 
-h2 {
-    font-weight:500;
-    text-decoration:underline;
-    cursor:pointer;
+.folder-content button:hover {
+    transition: .2s;
+    transform: translateY(-4px);
 }
 
-summary {
+.download-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #13080e79;
+    z-index:99999999;
+}
+
+.download-modal {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    right: 40px;
+    bottom: 80px;
+    background-color: #F5EDF0;
+    border-radius:.25rem;
+    padding:0rem .25rem;
     display:flex;
-    justify-content:center;
-}
-
-
-.reservado {
-    color: #F7B142;
-}
-
-table {
-    background:#12070D;
-    width:1135px;
-}
-
-tr:hover {
-    background-color:#F5EDF0;
-}
-
-td {
-    padding:5px 15px;
-    background-color: #fff;
-}
-
-th {
-    padding:5px 15px;
-    background-color: #F7B142;
-}
-
-h3 {
-    margin-bottom:5px;
-}
-
-h4 {
-    font-weight:500;
-    margin-top:0;
-}
-
-section.tables div {
-    margin-bottom:100px;
-}
+    flex-direction:column;
+    align-items:center;
+    z-index:999999999;
+  }

@@ -1,0 +1,62 @@
+.table-container {
+    width: 100vw;
+    font-family: 'Montserrat';
+    background-color: #F5EDF0;
+}
+
+.table-content {
+    width: 1280px;
+    margin: auto;
+    height: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.table-content button {
+    color: #13080E;
+    background: linear-gradient(to bottom, hsl(37, 92%, 61%) 70%, hsl(37, 92%, 70%));
+    font-family: 'Montserrat';
+    line-height: 39px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+    cursor: pointer;
+    font-weight: 700;
+    width: 80%;
+    padding: 1rem 0;
+    margin: auto;
+}
+
+.table-content button:hover {
+    transition: .2s;
+    transform: translateY(-4px);
+}
+
+.download-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #13080e79;
+    z-index:99999999;
+}
+
+.download-modal {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    right: 40px;
+    bottom: 80px;
+    background-color: #F5EDF0;
+    border-radius:.25rem;
+    padding:0rem .25rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    z-index:999999999;
+  }
